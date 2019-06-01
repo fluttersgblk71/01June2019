@@ -1,6 +1,6 @@
 # amigo
 
-A new Flutter project.
+Learn new languages with Amigo.
 
 ## Getting Started
 
