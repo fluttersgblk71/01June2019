@@ -2,7 +2,8 @@
 Flutter Hackathon @ Block71, Singapore
 
 # Amigo
-https://github.com/fluttersgblk71/01June2019/issues/1#issue-451067565
+![amigo](https://user-images.githubusercontent.com/51255469/58746816-5a361c80-8495-11e9-91c1-43e7cf7144cb.JPG)
+
 Helping you learn new language, one amigo at a time.
 
 # Challenges faced learning new language
