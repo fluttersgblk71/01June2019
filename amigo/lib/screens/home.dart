@@ -2,9 +2,7 @@ import 'package:amigo/helpers/constants.dart';
 import 'package:amigo/helpers/utilities.dart';
 import 'package:amigo/model/model.dart';
 import 'package:amigo/widgets/card.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 
 class MainScreen extends StatefulWidget {
   ///Creates the Login Screen
@@ -30,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
 
   Widget _constructBody(BuildContext context) {
     final _height = height(context);
-    final _width = width(context);
+    // final _width = width(context);
 
     return Column(
       children: [

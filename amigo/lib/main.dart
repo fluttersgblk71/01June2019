@@ -2,14 +2,6 @@ import 'package:amigo/helpers/constants.dart';
 import 'package:amigo/helpers/routes.dart';
 import 'package:amigo/helpers/utilities.dart';
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-
-GoogleSignIn _googleSignIn = GoogleSignIn(
-  scopes: [
-    'email',
-    'https://www.googleapis.com/auth/contacts.readonly',
-  ],
-);
 
 void main() async {
   await firestoreInstance.settings(
@@ -116,14 +108,5 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     );
-  }
-}
-
-Future<void> _handleSignIn() async {
-  try {
-    var details = await _googleSignIn.signIn();
-    print(details);
-  } catch (error) {
-    print(error);
   }
 }
