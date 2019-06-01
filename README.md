@@ -17,9 +17,8 @@ Helping you learn new language, one amigo at a time.
 
 
 # Stack
-- Rakutan RapidAPI
-- Agora
-- Firebase
+- Rakuten RapidAPI (langauge translation)
+- Agora (Video services)
+- Firebase (Database)
 - Facebook/Google authentication
-- Flair
-- 
+- Flair (Animation)
