@@ -17,6 +17,8 @@ Helping you learn new language, one amigo at a time.
 - A Mobile/Desktop app which connects person 1 - fluent in language A and would like to learn language B, with person 2 - fluent in language B and would like to learn language A.
 -Language translation to create flash cards for offline use
 
+![ezgif-5-cb8a021a7fb7](https://user-images.githubusercontent.com/51255469/58746855-d3ce0a80-8495-11e9-8884-eff04d9c5116.gif)
+
 
 # Stack
 - Rakuten RapidAPI (langauge translation)
