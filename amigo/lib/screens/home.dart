@@ -23,6 +23,12 @@ class _MainScreenState extends State<MainScreen> {
         title: Text(beginChat),
       ),
       body: _constructBody(context),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          _showDialog();
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 
@@ -59,8 +65,6 @@ class _MainScreenState extends State<MainScreen> {
                     );
                   },
                 );
-
-                // return Text(snapshot.data.toString());
               }
 
               return const SizedBox();
@@ -68,6 +72,38 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ),
       ],
+    );
+  }
+
+  void _showDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: Text(addToWordBank),
+          content: TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: wordHint,
+            ),
+          ),
+          actions: [
+            FlatButton(
+              child: Text(closeText),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            FlatButton(
+              child: Text(okText),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
