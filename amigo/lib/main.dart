@@ -2,6 +2,7 @@ import 'package:amigo/helpers/constants.dart';
 import 'package:amigo/helpers/routes.dart';
 import 'package:amigo/helpers/utilities.dart';
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 void main() async {
   await firestoreInstance.settings(
@@ -96,8 +97,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Text(loginText),
                       color: Colors.red,
                       textColor: Colors.white,
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/home');
+                      onPressed: () async {
+                        await _showDialog().then((_) {
+                          Navigator.pushNamed(context, '/home');
+                        });
+                        // await Navigator.pushNamed(context, '/home');
                       },
                     ),
                   ],
@@ -107,6 +111,30 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+    );
+  }
+
+  //Shows the Confirmation Dialog...
+  Future<void> _showDialog() {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          elevation: 8.0,
+          insetAnimationCurve: Curves.easeInOut,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0),
+          ),
+          child: SizedBox(
+            width: 200.0,
+            height: 200.0,
+            child: FlareActor(
+              'assets/animations/success.flr',
+              animation: 'Untitled',
+            ),
+          ),
+        );
+      },
     );
   }
 }
