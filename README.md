@@ -21,8 +21,49 @@ Helping you learn new language, one amigo at a time.
 
 
 # Stack
-- Rakuten RapidAPI (langauge translation)
+- Rakuten RapidAPI (langauge translation), SYSTRAN (https://english.api.rakuten.net/systran/api/systran-io-translation-and-nlp)
 - Agora (Video services)
 - Firebase (Database)
 - Facebook/Google authentication
 - Flair (Animation)
+
+## Demo on the usage of the API
+
+*************************************************
+******************Rakuten API********************
+*************************************************
+https://english.api.rakuten.net/systran/api/systran-io-translation-and-nlp
+*************************************************
+******************Rakuten API********************
+*************************************************
+
+*************************************************
+*******************Parameters********************
+*************************************************
+source:en
+target:
+	ja => japan
+	zh => chinese
+	es => spanish
+	ur => urdu
+	hi => hindi
+	ms => malay
+input: word want to translate
+*************************************************
+*******************Parameters********************
+*************************************************
+
+*************************************************
+*********************SNIPPET*********************
+*************************************************
+unirest.get("https://systran-systran-platform-for-language-processing-v1.p.rapidapi.com/translation/text/translate?source=en&target=ja&input=eat")
+.header("X-RapidAPI-Host", "systran-systran-platform-for-language-processing-v1.p.rapidapi.com")
+.header("X-RapidAPI-Key", "f44cdd85f1msh866a45a911bde67p128d2cjsnb2c67a1ff602")
+.end(function (result) {
+  console.log(result.status, result.headers, result.body);
+});
+*************************************************
+*********************SNIPPET*********************
+*************************************************
+
+
