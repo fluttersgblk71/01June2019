@@ -1,4 +1,4 @@
-# Flutter Hackathon @ Block71, Singapore
+# Flutter Hackathon 2019 @ Block71, Singapore
 
 
 # Welcome to: Amigo!
