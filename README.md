@@ -29,6 +29,7 @@ Helping you learn new language, one amigo at a time.
 
 ## Demo on the usage of the API
 
+```javascript
 *************************************************
 ******************Rakuten API********************
 *************************************************
@@ -65,5 +66,5 @@ unirest.get("https://systran-systran-platform-for-language-processing-v1.p.rapid
 *************************************************
 *********************SNIPPET*********************
 *************************************************
-
+```
 
